@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .section1{
+         top: 0;
+         left: 0;
+            padding: 12px;
+            width: 100%;
+            background-color: black;
+            display: none;
+            transition: 0.6s;
+            transition: 0.6 ;
+            overflow: hidden;
+      position: relative;
+            z-index: 1;
+        }
+        a{
+            text-decoration: none;
+            padding: 12px;
+            display: block;
+        }
+        span{
+            font-size: 35px;
+        }
+        .secction2{
+            top: 0; 
+        }
+    </style>
+</head>
+<body>
+    <div class="section1" id="display">
+      <a href="javascript:void(0)" onclick="close()"> &times;</a> 
+      <a href="#">About us</a> 
+      <a href="#">Service</a> 
+      <a href="#">Client</a> 
+      <a href="#">Contant</a> 
+    </div>
+    <div class="section2" >
+        <h1>Muranaga university orirntation</h1>
+        <p>Cick here for more details if you are interested width
+            what mut can offer in  career as the developer
+        </p>
+        <span onclick="open()" id="start">&#9776; OPen</span>
+    </div>
+
+    <script>
+var content=document.getElementById("display");
+var btn=document.getElementById("start");
+function open(){
+  content. style. width="100%"
+}
+function close(){
+    content. style.display="0"
+}
+
+    </script>
+</body>
+</html>
